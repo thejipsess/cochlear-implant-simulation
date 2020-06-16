@@ -14,7 +14,7 @@ function vocoded_x=vocoder(x, rate, nchan, cutoff , vocoder_type, verbose)
 % for more information about vocoders. 
 % 
 % Code written by Vahid Montazeri, October 2018.
-% Code editted by Jip de Kok, June 2020.
+% Code editted b
 
 
 % If not all inputs are defined then set them to default.
@@ -105,7 +105,6 @@ end
 Wn=Wn+Bw;
 Wn(Wn>1) = 0.99;
 Wn(Wn<0) = 0.01;
-disp(Wn)
 
 % Generate lowpass filter coefficients (for envelope extraction):
  fc=cutoff /(rate/2);
